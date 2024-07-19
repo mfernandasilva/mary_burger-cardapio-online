@@ -37,7 +37,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 18.90</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Hamburger Smash"
+                    data-name="Hamburger Smash"
                     data-price="18.90"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -59,7 +59,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 32.90</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Hamburguer Duplo"
+                    data-name="Hamburguer Duplo"
                     data-price="32.90"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -81,7 +81,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 35.90</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Hamburguer Salad"
+                    data-name="Hamburguer Salad"
                     data-price="35.90"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -103,7 +103,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 30.00</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Hamburguer da casa"
+                    data-name="Hamburguer da casa"
                     data-price="30.200"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -129,7 +129,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 6.00</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Coca Lata"
+                    data-name="Coca Lata"
                     data-price="6.00"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -147,7 +147,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 6.00</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name:="Guarana Lata"
+                    data-name="Guarana Lata"
                     data-price="6.00"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -163,12 +163,33 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
 <!--FIM MENU-->
 
-    <footer class="w-full bg-red-500 py-3 fixed button-0 z-40 flex itens-center justify-center ">
-        <button class="flex itens-center gap-2 text-white font-bold" id="cart-btn">
+        <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h1 class="text-center font-bold text-2xl mb-2">Meu carrinho</h1>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span> </p>
+                <p class="font-bold mt-4">Endereço da entrega:</p>
+
+                <input type="text" placeholder="Informe seu endereço completo: " id="address" class="w-full border-2 p-1 rounded my-1">
+                <p class="text-red-500 hidden" id="address-warn">Informe seu endereço completo: </p>
+                
+                <div class="flex items-center justify-between mt-5 w-full">
+                    <button id="class-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Concluir Pedido</button>
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center ">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
             (<span class="cart-count">2</span>)
             Veja meu carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
     </footer>
+
 </body>
 </html>
