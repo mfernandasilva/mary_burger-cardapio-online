@@ -1,6 +1,6 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
@@ -8,7 +8,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/output.css">
     <title>Mary Burger</title>
-    </head>
+</head>
     <body class="bg-gray-100 text-gray-900">
 
     <!-- Header Section -->
@@ -135,6 +135,7 @@
         <!-- Fim do Produto Item -->
     </div>
 
+    </section>
     <!-- Bebidas Section -->
     <section class="my-12">
         <h2 class="font-bold text-3xl text-center mb-6">Bebidas</h2>
@@ -208,6 +209,43 @@
             <!-- Fim da Bebida Item -->
         </div>
     </section>
+
+    <section class="my-12">
+        <h2 class="font-bold text-3xl text-center mb-6">Sobremesas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mx-auto max-w-7xl px-2 mb-16">
+      
+            <div class="flex gap-2 p-4 bg-white rounded-lg shadow-md">
+                <img src="./assets/TRUFA DE NOZES.jpg" alt="Trufa de Nozes" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 transition-transform duration-300" />
+                <div class="flex-1">
+                    <p class="font-bold">Trufa de Nozes</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button class="bg-gray-900 px-5 py-1 rounded add-to-cart-btn"
+                            data-name="Trufa de Nozes"
+                            data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim da Bebida Item -->
+
+        <div class="flex gap-2 p-4 bg-white rounded-lg shadow-md">
+            <img src="./assets/brownie.jpeg" alt="Trufa de Nozes" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 transition-transform duration-300" />
+            <div class="flex-1">
+                    <p class="font-bold">Brownie</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 12.00</p>
+                    <button class="bg-gray-900 px-5 py-1 rounded add-to-cart-btn"
+                            data-name="Trufa de Nozes"
+                            data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- Fim da Bebida Item -->
+
 
     <!-- Cart Modal -->
     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden" id="cart-modal">
